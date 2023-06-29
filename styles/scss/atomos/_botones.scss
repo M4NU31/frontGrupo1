@@ -1,22 +1,39 @@
 @import "base";
 @import "variables";
 
-.a-continue {
+.a-button {
     outline: none; 
     text-decoration: none;
-    .button-form-continue{
-        box-sizing: border-box;
-        background-color: var(--blue);
+    button{
+        font-weight: 600;
+        border-radius: 0.4em;
+        padding: 1em 2.44em;
+    }
+
+    .a-button__continue{
         color: var(--white);
-        font-weight: 700;
+        background-color: var(--blue);
         padding: 1em 7em;
-        border-radius: 0.45em;
         border: 0.13em solid var(--blue);
     }
-    .button-form-continue:hover{
+    .a-button__continue:hover{
         color: var(--gray);
         background-color: var(--white);
         border-color: var(--blue-obscure);
         transition: 0.5s all;
     }
+
+    .a-button__paymentMethod{
+        width: 5.18em;
+        text-align: center;
+        color: var(--gray);
+        background-color: var(--gray4);
+        border: 0.13em solid var(--gray4);
+    }
+    .--activate{
+        color: var(--white);
+        background-color: var(--blue);
+        border: 0.13em solid var(--blue);
+    }
 }
+
