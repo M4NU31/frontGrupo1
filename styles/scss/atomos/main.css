@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 :root {
   /* Font Family*/
   --fontFamily: "Poppins", sans-serif;
@@ -9,7 +10,9 @@
   --white2: #F8F8FA;
   --gray: #222;
   --gray2: #F2F3F5;
+  --gray3: #c4c4c4;
   --blue: #5640FF;
+  --blue-obscure: #1d127e;
   --darkBlue: #000425;
   --darkblue2: #000D29;
   --red: #F22A40;
@@ -48,6 +51,10 @@ h3 {
   font-weight: var(--medium);
 }
 
+button {
+  font-family: var(--fontFamily);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +81,10 @@ h3 {
   font-weight: var(--medium);
 }
 
+button {
+  font-family: var(--fontFamily);
+}
+
 :root {
   /* Font Family*/
   --fontFamily: "Poppins", sans-serif;
@@ -83,7 +94,9 @@ h3 {
   --white2: #F8F8FA;
   --gray: #222;
   --gray2: #F2F3F5;
+  --gray3: #c4c4c4;
   --blue: #5640FF;
+  --blue-obscure: #1d127e;
   --darkBlue: #000425;
   --darkblue2: #000D29;
   --red: #F22A40;
@@ -96,6 +109,92 @@ h3 {
   --blue-to-lightblue: linear-gradient(180deg, rgba(48,21,253,1) 0%, rgba(86,64,255,1) 100%);
 }
 
-.button-form-continue {
-  background-color: --blue;
+.a-continue {
+  outline: none;
+  text-decoration: none;
+}
+.a-continue .button-form-continue {
+  box-sizing: border-box;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 700;
+  padding: 1em 7em;
+  border-radius: 0.45em;
+  border: 0.13em solid var(--blue);
+}
+.a-continue .button-form-continue:hover {
+  color: var(--gray);
+  background-color: var(--white);
+  border-color: var(--blue-obscure);
+  transition: 0.5s all;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: var(--bold);
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: var(--bold);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: var(--medium);
+}
+
+button {
+  font-family: var(--fontFamily);
+}
+
+:root {
+  /* Font Family*/
+  --fontFamily: "Poppins", sans-serif;
+  /*Colores */
+  --black: #000;
+  --white: #fff;
+  --white2: #F8F8FA;
+  --gray: #222;
+  --gray2: #F2F3F5;
+  --gray3: #c4c4c4;
+  --blue: #5640FF;
+  --blue-obscure: #1d127e;
+  --darkBlue: #000425;
+  --darkblue2: #000D29;
+  --red: #F22A40;
+  /* Font Weights*/
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  /* Gradient */
+  --blue-to-lightblue: linear-gradient(180deg, rgba(48,21,253,1) 0%, rgba(86,64,255,1) 100%);
+}
+
+.input-form {
+  display: inline-flex;
+  border: 0.15em solid var(--gray3);
+  border-radius: 0.6em;
+}
+.input-form .input-form__discount {
+  padding: 0.7em 4em 0.7em 0.3em;
+  text-align: center;
+  font-size: 1.1em;
+}
+.input-form .input-form__icon-send {
+  transform: scale(1.5);
+  -webkit-padding-end: 0.7em;
+          padding-inline-end: 0.7em;
 }/*# sourceMappingURL=main.css.map */
