@@ -1,6 +1,23 @@
 @import "base";
 @import "variables";
 
-.button-form-continue{
-    background-color: --blue;
+.a-continue {
+    outline: none; 
+    text-decoration: none;
+    .button-form-continue{
+        box-sizing: border-box;
+        background-color: var(--blue);
+        color: var(--white);
+        font-weight: 700;
+        padding: 1em 7em;
+        border-radius: 0.45em;
+        border: 0.13em solid var(--blue);
+    }
+    .button-form-continue:hover{
+        color: var(--gray);
+        background-color: var(--white);
+        border-color: var(--blue-obscure);
+        transition: 0.5s all;
+        
+    }
 }
