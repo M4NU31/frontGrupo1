@@ -13,6 +13,7 @@
   --gray: #222;
   --gray2: #F2F3F5;
   --gray3: #c4c4c4;
+  --gray4: #EFEFEF;
   --blue: #5640FF;
   --blue-obscure: #1d127e;
   --darkBlue: #000425;
@@ -97,6 +98,7 @@ button {
   --gray: #222;
   --gray2: #F2F3F5;
   --gray3: #c4c4c4;
+  --gray4: #EFEFEF;
   --blue: #5640FF;
   --blue-obscure: #1d127e;
   --darkBlue: #000425;
@@ -111,25 +113,39 @@ button {
   --blue-to-lightblue: linear-gradient(180deg, rgba(48,21,253,1) 0%, rgba(86,64,255,1) 100%);
 }
 
-.a-continue {
+.a-button {
   outline: none;
   text-decoration: none;
 }
-.a-continue .button-form-continue {
-  box-sizing: border-box;
-  background-color: var(--blue);
+.a-button button {
+  font-weight: 600;
+  border-radius: 0.4em;
+  padding: 1em 2.44em;
+}
+.a-button .a-button__continue {
   color: var(--white);
-  font-weight: 700;
+  background-color: var(--blue);
   padding: 1em 7em;
-  border-radius: 0.45em;
   border: 0.13em solid var(--blue);
 }
-.a-continue .button-form-continue:hover {
+.a-button .a-button__continue:hover {
   color: var(--gray);
   background-color: var(--white);
   border-color: var(--blue-obscure);
   transition: 0.5s all;
 }
+.a-button .a-button__paymentMethod {
+  width: 5.18em;
+  text-align: center;
+  color: var(--gray);
+  background-color: var(--gray4);
+  border: 0.13em solid var(--gray4);
+}
+.a-button .--activate {
+  color: var(--white);
+  background-color: var(--blue);
+  border: 0.13em solid var(--blue);
+}
 
 * {
   margin: 0;
@@ -171,6 +187,7 @@ button {
   --gray: #222;
   --gray2: #F2F3F5;
   --gray3: #c4c4c4;
+  --gray4: #EFEFEF;
   --blue: #5640FF;
   --blue-obscure: #1d127e;
   --darkBlue: #000425;
@@ -186,12 +203,11 @@ button {
 }
 
 .input-form {
-  display: inline-flex;
   border: 0.15em solid var(--gray3);
   border-radius: 0.6em;
 }
 .input-form .input-form__discount {
-  padding: 0.7em 4em 0.7em 0.3em;
+  margin: 0.7em auto 0.7em 0.3em;
   text-align: center;
   font-size: 1.1em;
 }
@@ -199,6 +215,20 @@ button {
   transform: scale(1.5);
   -webkit-padding-end: 0.7em;
           padding-inline-end: 0.7em;
+}
+
+.--paymentInformation {
+  margin: 0.8em auto 0.8em 0.8em;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.-date {
+  display: inline-block;
+}
+.-date .--date {
+  width: 4em;
+  margin: 0.8em 1em;
 }
 
 * {
@@ -241,6 +271,7 @@ button {
   --gray: #222;
   --gray2: #F2F3F5;
   --gray3: #c4c4c4;
+  --gray4: #EFEFEF;
   --blue: #5640FF;
   --blue-obscure: #1d127e;
   --darkBlue: #000425;
@@ -325,6 +356,7 @@ button {
   --gray: #222;
   --gray2: #F2F3F5;
   --gray3: #c4c4c4;
+  --gray4: #EFEFEF;
   --blue: #5640FF;
   --blue-obscure: #1d127e;
   --darkBlue: #000425;
