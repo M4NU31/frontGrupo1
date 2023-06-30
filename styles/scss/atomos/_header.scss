@@ -1,0 +1,95 @@
+:root{
+    --navSize: 58px;
+}
+
+header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    .header-inner{
+        max-width: 1310px;
+        margin: 0 auto;
+        padding: 0 50px;
+        height: var(--navSize);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-logo{
+            .logo{
+                img{
+                    display: block;
+                }
+            }
+        }
+        .header-menu{
+            .main-menu{
+                display: flex;
+                align-items: center;
+                .menu-item{
+                    &.menu-item-carrito{
+                        a{
+                            position: relative;
+                            display: block;
+                            width: 21px;
+                            height: 21px;
+                            &::before{
+                                content: "";
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                background-image: url('../../source/img/png/icons/carrito.png');
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    &.menu-burger{
+                        .hamburger-toggle{
+                            width: 18px;
+                            height: 12px;
+                            padding: 0;
+                            position: relative;
+                            background: transparent;
+                            border: none;
+                            outline: none;
+                            border-radius: 0;
+                            cursor: pointer;
+                            .burger-box{
+                                width: 100%;
+                                height: 2px;
+                                background: var(--white);
+                                transition: all ease 0.2s;
+                                &::before,
+                                &::after{
+                                    content: '';
+                                    height: 2px;
+                                    width: 100%;
+                                    background: var(--white);
+                                    position: absolute;
+                                    transition: all ease 0.2s;
+                                }
+                                &::before{
+                                    top: 0;
+                                    left: 0;
+                                }
+                                &::after{
+                                    bottom: 0;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+header + section .container{
+    padding-top: var(--navSize);
+}

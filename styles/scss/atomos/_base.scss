@@ -7,6 +7,9 @@
 body{
     font-family: var(--fontFamily);
     font-size: 14px;
+}
+
+section{
     color: var(--bodyColor);
     background-color: var(--bodyBgColor);
 }
@@ -27,8 +30,13 @@ h3{
 }
 
 .container{
+    --containerGap: 0 7.5vw;
     max-width: 1310px;
-    padding: 0 50px;
+    padding: var(--containerGap);
+    margin: 0 auto;
+    @media only screen and (min-width: 768px){
+        --containerGap: 0 50px;
+    }
 }
 
 .content{
@@ -36,12 +44,9 @@ h3{
     padding-bottom: var(--contentSpace, 100px);
 }
 
-.main-section{
-    --bodyColor: var(--darkBlue);
-    --bodyBgColor: var(--white);
+ul{
+    li{
+        list-style: none;
+    }
 }
 
-.alternate-section{
-    --bodyColor: var(--white);
-    --bodyBgColor: var(--blue);
-}

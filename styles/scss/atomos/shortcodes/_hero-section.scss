@@ -1,0 +1,10 @@
+.hero-section{
+    background-image: url('../../source/img/jpg/Hero-Section-Bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    .container{
+        .content{
+            --contentSpace: 150px;
+        }
+    }
+}

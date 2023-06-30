@@ -27,3 +27,13 @@
     --blue-to-lightblue: linear-gradient(180deg, rgba(48,21,253,1) 0%, rgba(86,64,255,1) 100%);
 
 }
+
+.main-section{
+    --bodyColor: var(--darkBlue);
+    --bodyBgColor: var(--white);
+}
+
+.alternate-section{
+    --bodyColor: var(--white);
+    --bodyBgColor: var(--blue);
+}
