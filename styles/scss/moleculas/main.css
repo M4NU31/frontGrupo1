@@ -57,11 +57,13 @@ button {
 .a-button {
   outline: none;
   text-decoration: none;
+  margin-inline: auto;
+  padding-inline: 0.3em;
 }
 .a-button button {
   font-weight: 600;
   border-radius: 0.4em;
-  padding: 1em 2.44em;
+  padding: 1.3em 1em;
 }
 .a-button .a-button__continue {
   color: var(--white);
@@ -76,7 +78,6 @@ button {
   transition: 0.5s all;
 }
 .a-button .a-button__paymentMethod {
-  width: 5.18em;
   text-align: center;
   color: var(--gray);
   background-color: var(--gray4);
@@ -91,10 +92,12 @@ button {
 .input-form {
   border: 0.15em solid var(--gray3);
   border-radius: 0.6em;
+  display: flex;
+  margin: 0.45em;
 }
 .input-form .input-form__discount {
   margin: 0.7em auto 0.7em 0.3em;
-  text-align: center;
+  padding-inline: 0.5em;
   font-size: 1.1em;
 }
 .input-form .input-form__icon-send {
@@ -123,6 +126,12 @@ button {
   font-size: 1.5em;
 }
 
+.text-form-shop {
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
 .text-shop-product {
   color: var(--black);
   font-weight: 700;
@@ -130,10 +139,11 @@ button {
 
 .title-product {
   font-weight: 700;
+  width: 11em;
 }
 
 .price-product {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
 }
 
@@ -145,8 +155,98 @@ button {
 
 .delate-product {
   color: var(--blue);
+  font-weight: 600;
 }
 
 .imagen-product {
   width: 10em;
+  height: 7.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-product {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.3em auto;
+}
+.card-product .product__info {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 3px;
+  grid-template-areas: "title title title" "descuento descuento descuento" "delate delate price";
+  margin: 0 0.5em;
+}
+.card-product .product__info .title-product {
+  grid-area: title;
+}
+.card-product .product__info .discount-product {
+  grid-area: descuento;
+}
+.card-product .product__info .delate-product {
+  grid-area: delate;
+}
+.card-product .product__info .price-product {
+  grid-area: price;
+}
+
+.price_finaly {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.7em 0.5em;
+}
+
+.button-payments {
+  display: flex;
+}
+
+.form-cardpay .form-cardpay__card .card__date {
+  display: flex;
+  justify-content: space-around;
+}
+.form-cardpay .card-dues {
+  justify-content: space-around;
+}
+.form-cardpay .card-dues .a-button__paymentMethod {
+  background-color: var(--white);
+}
+.form-cardpay .card-dues .--dues {
+  width: 1.5em;
+  height: 1em;
+  border: 0.1em solid var(--gray3);
+}
+.form-cardpay .card-dues .--activate {
+  background-color: var(--blue);
+}
+.form-cardpay .card-dues .card-dues__btn {
+  display: flex;
+  justify-content: space-around;
+}
+.form-cardpay .card-facture {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-cardpay .card-facture .feature-activate {
+  margin-inline: 0.5em;
+}
+.form-cardpay .btn_finaly {
+  margin: 0.3em auto;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+.form-cardpay .btn_finaly button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.successful-purchase {
+  display: grid;
+  grid-gap: 10px;
+}
+.successful-purchase .--text {
+  margin-inline: 0.4em;
 }/*# sourceMappingURL=main.css.map */

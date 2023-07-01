@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,149 @@
     <title>Test - Moleculas</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../scss/moleculas/main.css">
 </head>
+
 <body>
-    
+    <div class="card-product">
+        <div class="product__img">
+            <img src="../source/img/back_end.png" alt="" srcset="" class="imagen-product">
+        </div>
+        <div class="product__info">
+            <p class="title-product">Gestión de Envases, Empaques y Embalajes</p>
+            <p class="discount-product">Dto. 30%</p>
+            <a href="" class="delate-product">Eliminar</a>
+            <p class="price-product">s/504.00</p>
+        </div>
+    </div>
+    <div class="input-form">
+        <input type="text" name="discount" id="discount" class="input-form__discount" placeholder="Código de descuento">
+        <img src="../source/img/imput_send.svg" alt="" srcset="" class="input-form__icon-send">
+    </div>
+    <div class="price_finaly">
+        <p class="texto-form">
+            SubTotal
+        </p>
+        <p class="texto-form">
+            S/600.00
+        </p>
+    </div>
+    <div class="button-payments">
+        <a href="" class="a-button">
+            <button type="button" class="a-button__paymentMethod --activate">
+                Tarjeta de crédito
+            </button>
+        </a>
+        <a href="" class="a-button">
+            <button type="button" class="a-button__paymentMethod">
+                Tarjeta de débito
+            </button>
+        </a>
+        <a href="" class="a-button">
+            <button type="button" class="a-button__paymentMethod">
+                Pago Efectivo
+            </button>
+        </a>
+    </div>
+
+    <div class="form-cardpay">
+        <div class="form-cardpay__personal">
+            <h2 class="text-form-shop">
+                Datos personales
+            </h2>
+            <div class="input-form">
+                <input type="number" class="--paymentInformation" placeholder="Documento de Identidad">
+            </div>
+            <div class="input-form">
+                <input type="text" class="--paymentInformation" placeholder="Correo Electronico">
+            </div>
+        </div>
+        <div class="form-cardpay__card">
+            <h2 class="text-form-shop">
+                Datos personales
+            </h2>
+            <div class="input-form">
+                <input type="number" class="--paymentInformation" placeholder="Apellidos y Nombre">
+            </div>
+            <div class="input-form">
+                <input type="text" class="--paymentInformation" placeholder="Num. de Tarjeta">
+            </div>
+            <div class="card__date">
+                <div class="input-form -date">
+                    <input type="text" class="--date" placeholder="Mes">
+                </div>
+                <div class="input-form -date">
+                    <input type="text" class="--date" placeholder="Año">
+                </div>
+                <div class="input-form -date">
+                    <input type="text" class="--date" placeholder="cvc/cvv">
+                </div>
+            </div>
+        </div>
+        <div class="card-dues">
+            <h2 class="text-form-shop">
+                Numero de Cuotas
+            </h2>
+            <div class="card-dues__btn">
+                <a href="" class="a-button">
+                    <button type="button" class="a-button__paymentMethod --activate --dues">
+                        1
+                    </button>
+                </a>
+                <a href="" class="a-button">
+                    <button type="button" class="a-button__paymentMethod --dues">
+                        2
+                    </button>
+                </a>
+                <a href="" class="a-button">
+                    <button type="button" class="a-button__paymentMethod --dues">
+                        3
+                    </button>
+                </a>
+                <a href="" class="a-button">
+                    <button type="button" class="a-button__paymentMethod --dues">
+                        4
+                    </button>
+                </a>
+                <a href="" class="a-button">
+                    <button type="button" class="a-button__paymentMethod --dues">
+                        5
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="card-facture">
+            <h2 class="text-form-shop">
+                Solicitar Factura
+            </h2>
+            <div class="flex h-6 items-center feature-activate">
+                <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+                <button type="button" class="flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600" role="switch" aria-checked="true" x-ref="switch" x-state:on="Enabled" x-state:off="Not Enabled" :class="{ 'bg-indigo-600': on, 'bg-gray-200': !(on) }" aria-labelledby="switch-1-label" :aria-checked="on.toString()" @click="on = !on">
+                    <span class="sr-only">Agree to policies</span>
+                    <span aria-hidden="true" class="h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out translate-x-3.5" x-state:on="Enabled" x-state:off="Not Enabled" :class="{ 'translate-x-3.5': on, 'translate-x-0': !(on) }"></span>
+                </button>
+            </div>
+        </div>
+        <a href="" class="a-button btn_finaly">
+            <button type="button" class="a-button__paymentMethod --activate">
+                Finalizar Compra
+            </button>
+        </a>
+    </div>
+
+    <div class="successful-purchase form-cardpay">
+        <h2 class="text-form-shop">
+            ¡Compra exitosa!
+        </h2>
+        <p class="--text">
+            La boleta o factura solicitada será enviada a tu correo en unos momentos.
+        </p>
+        <a href="" class="a-button btn_finaly">
+            <button type="button" class="a-button__paymentMethod --activate">
+                Finalizar Compra
+            </button>
+        </a>
+    </div>
 </body>
 <script src="https://cdn.tailwindcss.com">
     module.exports = {
@@ -20,4 +161,5 @@
         ],
     }
 </script>
+
 </html>
