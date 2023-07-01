@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button-form-continue{
     background-color: var(--blue);
 }
@@ -7,3 +8,42 @@ button:focus, input[type="submit"]:focus, input:focus{
 button, input[type="submit"]{
     cursor: pointer;
 }
+=======
+.a-button {
+    outline: none; 
+    text-decoration: none;
+    margin-inline: auto;
+    padding-inline: 0.3em;
+    button{
+        font-weight: 600;
+        border-radius: 0.4em;
+        padding: 1.3em 1em;
+    }
+
+    .a-button__continue{
+        color: var(--white);
+        background-color: var(--blue);
+        padding: 1em 7em;
+        border: 0.13em solid var(--blue);
+    }
+    .a-button__continue:hover{
+        color: var(--gray);
+        background-color: var(--white);
+        border-color: var(--blue-obscure);
+        transition: 0.5s all;
+    }
+
+    .a-button__paymentMethod{
+        text-align: center;
+        color: var(--gray);
+        background-color: var(--gray4);
+        border: 0.13em solid var(--gray4);
+    }
+    .--activate{
+        color: var(--white);
+        background-color: var(--blue);
+        border: 0.13em solid var(--blue);
+    }
+}
+
+>>>>>>> origin/feature-css-carrito

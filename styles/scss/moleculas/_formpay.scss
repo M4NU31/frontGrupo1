@@ -1,0 +1,47 @@
+.form-cardpay{
+    .form-cardpay__personal{
+        // add code ...
+    }
+    .form-cardpay__card{
+        .card__date{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .card-dues{
+        justify-content: space-around;
+        .a-button__paymentMethod{
+            background-color: var(--white);
+        }
+        .--dues{
+            width: 1.5em;
+            height: 1em;
+            border: 0.1em solid var(--gray3);
+        }
+        .--activate{
+            background-color: var(--blue);
+        }
+        .card-dues__btn{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .card-facture{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .feature-activate{
+            margin-inline: 0.5em;
+        }
+    }
+    .btn_finaly{
+        margin: 0.3em auto;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        button{
+            box-sizing: border-box;
+            width: 100%;
+        }
+    }
+}

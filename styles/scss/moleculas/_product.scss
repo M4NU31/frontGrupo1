@@ -1,0 +1,28 @@
+.card-product{
+    display: flex;
+    width: fit-content;
+    margin: 0.3em auto;
+    .product__info{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(3,auto);
+        grid-gap: 3px;
+        grid-template-areas:"title title title"
+                            "descuento descuento descuento"
+                            "delate delate price";
+        margin: 0 0.5em;
+        .title-product{
+            grid-area: title;
+        }
+        .discount-product{
+            grid-area: descuento;
+        }
+        .delate-product{
+            grid-area: delate;
+        }
+        .price-product{
+            grid-area: price;
+        }
+    }
+    
+}
