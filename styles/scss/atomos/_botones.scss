@@ -1,14 +1,17 @@
-<<<<<<< HEAD
+button{
+    font-family: var(--fontFamily);
+}
+
 .button-form-continue{
     background-color: var(--blue);
 }
 button:focus, input[type="submit"]:focus, input:focus{
     outline: none;
 }
+
 button, input[type="submit"]{
     cursor: pointer;
 }
-=======
 .a-button {
     outline: none; 
     text-decoration: none;
@@ -46,4 +49,3 @@ button, input[type="submit"]{
     }
 }
 
->>>>>>> origin/feature-css-carrito
