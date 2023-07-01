@@ -3,7 +3,11 @@
     font-weight: 700;
     font-size: 1.5em;
 }
-
+.text-form-shop{
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
 .text-shop-product{
     color: var(--black);
     font-weight: 700;
@@ -11,10 +15,11 @@
 
 .title-product{
     font-weight: 700;
+    width: 11em;
 }
 
 .price-product{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.1em;
 }
 
@@ -26,4 +31,5 @@
 
 .delate-product{
     color: var(--blue);
+    font-weight: 600;
 }
