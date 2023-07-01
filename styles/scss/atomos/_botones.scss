@@ -1,13 +1,12 @@
-@import "base";
-@import "variables";
-
 .a-button {
     outline: none; 
     text-decoration: none;
+    margin-inline: auto;
+    padding-inline: 0.3em;
     button{
         font-weight: 600;
         border-radius: 0.4em;
-        padding: 1em 2.44em;
+        padding: 1.3em 1em;
     }
 
     .a-button__continue{
@@ -24,7 +23,6 @@
     }
 
     .a-button__paymentMethod{
-        width: 5.18em;
         text-align: center;
         color: var(--gray);
         background-color: var(--gray4);
