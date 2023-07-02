@@ -10,6 +10,8 @@
         grid-template-areas:"title title title"
                             "descuento descuento descuento"
                             "delate delate price";
+        align-content: space-between;
+        align-items: center;
         margin: 0 0.5em;
         .title-product{
             grid-area: title;
@@ -24,5 +26,4 @@
             grid-area: price;
         }
     }
-    
 }
