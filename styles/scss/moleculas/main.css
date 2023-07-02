@@ -102,13 +102,11 @@ button {
 }
 .input-form .input-form__icon-send {
   transform: scale(1.5);
-  -webkit-padding-end: 0.7em;
-          padding-inline-end: 0.7em;
+  padding-inline-end: 0.7em;
 }
 
 .--paymentInformation {
   margin: 0.8em auto 0.8em 0.8em;
-  width: -moz-max-content;
   width: max-content;
 }
 
@@ -160,14 +158,13 @@ button {
 
 .imagen-product {
   width: 10em;
-  height: 7.5em;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 7.8em;
+  object-fit: cover;
+  border-radius: 0.4em;
 }
 
 .card-product {
   display: flex;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0.3em auto;
 }
@@ -177,6 +174,8 @@ button {
   grid-template-rows: repeat(3, auto);
   grid-gap: 3px;
   grid-template-areas: "title title title" "descuento descuento descuento" "delate delate price";
+  align-content: space-between;
+  align-items: center;
   margin: 0 0.5em;
 }
 .card-product .product__info .title-product {
@@ -249,4 +248,25 @@ button {
 }
 .successful-purchase .--text {
   margin-inline: 0.4em;
+}
+
+.header-carrito {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "icon_ header header";
+  background-color: var(--darkBlue);
+  color: var(--white);
+  padding-block: 1em;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.header-carrito .--icon {
+  grid-area: icon_;
+  margin-inline-start: 2em;
+}
+.header-carrito .texto-form {
+  grid-area: header;
+  color: var(--white);
 }/*# sourceMappingURL=main.css.map */
