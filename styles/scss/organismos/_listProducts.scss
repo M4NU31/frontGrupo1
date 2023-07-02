@@ -1,0 +1,12 @@
+.list_products{
+    display: grid;
+    grid-gap: 0.3em;
+    .card-product{
+        .product__info{
+            .discount-product{
+                display: flex;
+                
+            }
+        }
+    }
+}

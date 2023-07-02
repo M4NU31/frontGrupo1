@@ -1,0 +1,20 @@
+.header-carrito{
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "icon_ header header";
+    background-color: var(--darkBlue);
+    color: var(--white);
+    padding-block: 1em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    .--icon{
+        grid-area: icon_;
+        margin-inline-start: 2em;
+    }
+    .texto-form{
+        grid-area: header;
+        color: var(--white);
+    }
+}

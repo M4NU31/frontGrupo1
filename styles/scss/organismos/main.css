@@ -161,4 +161,126 @@ button {
   height: 7.8em;
   object-fit: cover;
   border-radius: 0.4em;
+}
+
+.card-product {
+  display: flex;
+  width: fit-content;
+  margin: 0.3em auto;
+}
+.card-product .product__info {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 3px;
+  grid-template-areas: "title title title" "descuento descuento descuento" "delate delate price";
+  align-content: space-between;
+  align-items: center;
+  margin: 0 0.5em;
+}
+.card-product .product__info .title-product {
+  grid-area: title;
+}
+.card-product .product__info .discount-product {
+  grid-area: descuento;
+}
+.card-product .product__info .delate-product {
+  grid-area: delate;
+}
+.card-product .product__info .price-product {
+  grid-area: price;
+}
+
+.price_finaly {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.7em 0.5em;
+}
+
+.button-payments {
+  display: flex;
+}
+
+.form-cardpay .form-cardpay__card .card__date {
+  display: flex;
+  justify-content: space-around;
+}
+.form-cardpay .card-dues {
+  justify-content: space-around;
+}
+.form-cardpay .card-dues .a-button__paymentMethod {
+  background-color: var(--white);
+}
+.form-cardpay .card-dues .--dues {
+  width: 1.5em;
+  height: 1em;
+  border: 0.1em solid var(--gray3);
+}
+.form-cardpay .card-dues .--activate {
+  background-color: var(--blue);
+}
+.form-cardpay .card-dues .card-dues__btn {
+  display: flex;
+  justify-content: space-around;
+}
+.form-cardpay .card-facture {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-cardpay .card-facture .feature-activate {
+  margin-inline: 0.5em;
+}
+.form-cardpay .btn_finaly {
+  margin: 0.3em auto;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+.form-cardpay .btn_finaly button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.successful-purchase {
+  display: grid;
+  grid-gap: 10px;
+}
+.successful-purchase .--text {
+  margin-inline: 0.4em;
+}
+
+.header-carrito {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "icon_ header header";
+  background-color: var(--darkBlue);
+  color: var(--white);
+  padding-block: 1em;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.header-carrito .--icon {
+  grid-area: icon_;
+  margin-inline-start: 2em;
+}
+.header-carrito .texto-form {
+  grid-area: header;
+  color: var(--white);
+}
+
+.list_products {
+  display: grid;
+  grid-gap: 0.3em;
+}
+.list_products .card-product .product__info .discount-product {
+  display: flex;
+}
+
+.box-paycard {
+  margin-block: 6em 2em;
+  display: grid;
+  grid-gap: 4px;
 }/*# sourceMappingURL=main.css.map */
