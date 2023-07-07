@@ -293,4 +293,63 @@ button {
   display: grid;
   align-content: space-between;
   justify-content: center;
+}
+
+body {
+  height: 100%;
+}
+
+@media (min-width: 375px) {
+  .card-product .imagen-product {
+    width: 12em;
+  }
+}
+@media (min-width: 600px) {
+  .product-shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+  }
+}
+@media (min-width: 425px) {
+  .card-product .imagen-product {
+    height: 7.3em;
+  }
+  .card-product .product__info .title-product {
+    width: 14em;
+  }
+}
+@media (min-height: 667px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  body .product-shop {
+    height: inherit;
+    display: grid;
+    align-content: space-between;
+  }
+  body .product-shop .box-paycard {
+    margin-block: 2em;
+  }
+}
+@media (min-height: 844px) {
+  .product-shop .box-paycard {
+    margin-block: 10em 1em;
+  }
+}
+@media (min-width: 425px) or (min-height: 844px) {
+  .product-shop .list_products {
+    margin-block: 4em 1em;
+  }
+  .product-shop .list_products .imagen-product {
+    height: 8em;
+    width: 12em;
+  }
+  .product-shop .list_products .product__info .title-product {
+    width: 16em;
+    font-weight: 600;
+  }
 }/*# sourceMappingURL=main.css.map */
