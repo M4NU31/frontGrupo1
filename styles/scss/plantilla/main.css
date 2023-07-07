@@ -329,7 +329,6 @@ body {
   body .product-shop {
     height: inherit;
     display: grid;
-    align-content: space-between;
   }
   body .product-shop .box-paycard {
     margin-block: 2em;
@@ -340,7 +339,13 @@ body {
     margin-block: 10em 1em;
   }
 }
-@media (min-width: 425px) or (min-height: 844px) {
+@media (min-width: 425px) {
+  .product-shop .list_products .product__info .title-product {
+    width: 16em;
+    font-weight: 600;
+  }
+}
+@media (min-height: 844px) {
   .product-shop .list_products {
     margin-block: 4em 1em;
   }
@@ -348,8 +353,58 @@ body {
     height: 8em;
     width: 12em;
   }
-  .product-shop .list_products .product__info .title-product {
-    width: 16em;
-    font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .product-shop {
+    grid-template-columns: repeat(2, auto);
+    align-content: center;
+  }
+  .product-shop .list_products {
+    margin: 1em;
+  }
+  .product-shop .list_products .card-product .imagen-product {
+    width: 15em;
+    height: 10em;
+  }
+  .product-shop .list_products .card-product .product__info .title-product {
+    font-size: 1.5em;
+  }
+  .product-shop .list_products .card-product .product__info .discount-product {
+    font-size: 1em;
+  }
+  .product-shop .list_products .card-product .product__info .delate-product {
+    font-size: 1.1 em;
+  }
+  .product-shop .list_products .card-product .product__info .price-product {
+    font-size: 1.5em;
+    text-align: end;
+  }
+  .product-shop .box-paycard {
+    width: 28em;
+  }
+  .product-shop .box-paycard .input-form__discount {
+    padding: 0.4em 0.8em;
+  }
+  .product-shop .box-paycard .a-button__paymentMethod {
+    font-size: 1.3em;
+    padding-block: 1em;
+  }
+}
+@media (min-width: 1440px) {
+  .product-shop .list_products .card-product .imagen-product {
+    width: 19em;
+  }
+  .product-shop .list_products .card-product .product__info {
+    grid-template-areas: "title title price" "descuento descuento descuento" "delate delate delate";
+  }
+  .product-shop .list_products .card-product .product__info .title-product {
+    width: 25em;
+    font-size: 1.7em;
+  }
+  .product-shop .list_products .card-product .product__info .discount-product, .product-shop .list_products .card-product .product__info .delate-product {
+    font-size: 1.2em;
+  }
+  .product-shop .list_products .card-product .product__info .price-product {
+    font-size: 1.5em;
   }
 }/*# sourceMappingURL=main.css.map */
